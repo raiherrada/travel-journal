@@ -104,6 +104,7 @@ p{
     max-width: 50px;
     min-width: 20px;
     margin: 15px;
+    object-fit: cover;
 }
 
 /* =================
@@ -171,6 +172,7 @@ main section{
 .image-article{
     width: 100%;
     border-radius: 0.375em;
+    object-fit: cover;
 }
 
 /* =================
@@ -189,6 +191,7 @@ article{
 .image-one{
     width: 100%;
     border-radius: 0.375em;
+    object-fit: cover;
 }
 
 a{
