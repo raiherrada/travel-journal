@@ -1,0 +1,326 @@
+/* =================
+    CSS Reset
+   ================= */
+
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+/* =================
+    Grid Setting
+   ================= */
+   
+.main-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "thailand"
+        "phiphi"
+        "mountains";
+}
+
+.thailand{
+    grid-area: thailand;
+}
+
+.phiphi{
+    grid-area: phiphi;
+}
+
+.mountains{
+    grid-area: mountains;
+}
+
+/* =================
+    Fonts
+   ================= */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* =================
+    Typography
+   ================= */
+
+h1{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+footer p{
+    font-size: 0.75rem;
+}
+
+p.date{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 32px;
+    font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 16px;
+    font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =================
+    Header
+   ================= */
+
+.banner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3px;
+    margin: 0 0.7em;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.banner-img{
+    width: 20%;
+    max-width: 50px;
+    min-width: 20px;
+    margin: 8px;
+}
+
+/* =================
+    Navigation
+   ================= */
+
+.navigation-list{
+    display: flex;
+    gap: 5px;
+    font-size: 0.5rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, .fa-solid:hover{
+    color: blanchedalmond;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.29);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.75rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+/* =================
+    Main Section
+   ================= */
+   
+.main-section{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 5px;
+   margin: 10px;
+}
+
+.avatar{
+    border-radius: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    width: 50%;
+    align-self: flex-start;
+}
+
+.main-article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =================
+    Recent Posts
+   ================= */
+   
+.recent-posts-text{
+    text-align: center;
+}
+
+article{
+    padding: 5px;
+    margin: 10px;
+}
+
+.image-one{
+    width: 100%;
+    border-radius: 0.375em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:focus {
+    filter: brightness(0.9);
+}
+ 
+/* =================
+    Footer
+   ================= */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    color: white;
+    min-height: 50px;
+    font-weight: 600;
+}
+
+/* =================
+    Media Queries
+   ================= */
+   
+   /* iPads */  
+   
+@media(min-width: 500px){
+    
+    .main-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .avatar{
+        border-radius: 100%;
+        min-width: 150px;
+        max-width: 250px;
+        width: 100%;
+}
+
+    .recent-posts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "thailand thailand"
+        "phiphi mountains"
+        "foot foot";
+    }
+    
+    .hidden{
+        display: block;
+    }
+    
+    .sidebar, .sidebar-show{
+        display: none;
+    }
+    
+    .navigation-list{
+        font-size: 0.75rem;
+        gap: 10px
+    }
+    
+    footer p{
+        font-size: 0.875rem;
+    }
+}
+   
+   /* Large Screens */
+   
+@media(min-width: 870px){
+    
+    .avatar{
+        border-radius: 100%;
+        min-width: 250px;
+        max-width: 350px;
+        width: 100%;
+}
+
+    .recent-posts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "thailand phiphi mountains"
+        "foot foot foot";
+    }
+    
+    .sidebar, .sidebar-show{
+        display: none;
+        }
+
+    h2{
+        font-size: 36px;
+        font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+    }
+
+    h3{
+        font-size: 20px;
+        font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+    
+    .recent-posts-text{
+        font-size: 18px;
+    }
+    
+    footer p{
+        font-size: 0.875rem;
+    }
+}

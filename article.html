@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Freedom Found Far From Home</title>
+        <link rel="stylesheet" href="css/article.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/dda189db68.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- top area -->
+        <header class="banner-header">
+            <section class="banner">
+                <img src="images/world.png" class="banner-img">
+                <h1>My Learning Journal</h1>
+            </section>
+            <nav class="navigation">
+                <!-- regular navigation elements (hidden on mobile with the class "hidden") -->
+                <ul class="navigation-list">
+                    <li><a href="index.html" class="home hidden">HOME</a></li>
+                    <li><a href="about.html" class="about-me hidden">ABOUT ME</a></li>
+                    <li class="sidebar-show" id="sidebar-show"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+                </ul>
+                <!-- hidden sidebar (unless it's mobile) -->
+                <ul class="sidebar" id="sidebar">
+                    <li class="close-btn" id="close-btn"><i class="fa-solid fa-x fa-sm"></i></li>
+                    <li><a href="index.html" class="home">HOME</a></li>
+                    <li><a href="about.html" class="about-me">ABOUT ME</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        
+         <main>
+            <section>
+                <p class="date">MAY 10, 2026</p>
+                <h2>Freedom Found Far From Home 🌍</h2>
+                <p>Traveling solo is one of the most rewarding experiences I have ever had. There is something incredibly empowering about stepping into a new place completely on your own and realizing that every decision is yours to make. You choose where to go, what to eat, how long to stay, and what kind of memories you want to create.</p>
+                <img src="images/boat.jpg" class="image-article">
+                <h3>Solo travel teaches independence in a way that daily life often cannot</h3> 
+                <p>You learn how to navigate unfamiliar places, deal with unexpected changes, and trust yourself when things do not go according to plan. Missing a train, getting lost in a city, or figuring out a new language suddenly become part of the adventure rather than problems to fear.</p>
+                <h3>Traveling solo also gives you a rare kind of freedom</h3>
+                <p>There is no pressure to follow someone else’s preferences or schedule. If you want to spend three hours in a museum, watch the sunset from a random beach, or completely change your plans for the day, you can.
+                
+                Most importantly, solo travel allows you to reconnect with yourself. In the middle of discovering new places, you also discover new parts of who you are ✨</p>
+            </section>
+            <h3 class="recent-posts-text">Recent posts</h3>
+            
+            <!-- articles -->
+            <section class="recent-posts">
+                <a href="/a-journey-through-the-heart-of-thailand.html" 
+				class="thailand"
+				aria-label="Discover how crystals stabilize time in quantum computers">
+                    <article>
+                        <img src="images/thailand.jpg" 
+                            alt="An image of a boat in a landscape in Thailand" class="image-one">
+                        <header class="article-header">
+                            <p class="date">JULY 23, 2022</p>
+                            <h2>A Journey Through the Heart of Thailand</h2>
+                            <p>Thailand was one of those trips that felt like five different adventures combined into one. Every destination had its own personality, atmosphere, and rhythm, which made the entire journey unforgettable.</p>
+                        </header>
+                    </article>
+                </a>
+                
+                <a href="/breathing-under-water-in-phi-phi.html" 
+				class="phiphi"
+				aria-label="Breathing underwater in Phi Phi islands">
+                    <article>
+                        <img src="images/phiphi.jpg" 
+                            alt="An image of a woman doing scuba diving in Phi Phi islands" class="image-one">
+                        <header class="article-header">
+                            <p class="date">JULY 23, 2022</p>
+                            <h2>Breathing Underwater in Phi Phi</h2>
+                            <p>Scuba diving in Phi Phi was one of the most exciting and unforgettable things I have ever done. Before getting into the water, I felt a mix of excitement and nervousness.</p>
+                        </header>
+                    </article>
+                </a>
+                
+                <a href="/where-the-mountains-reset-your-mind.html" 
+				class="mountains"
+				aria-label="Discover the power of mountains in reseting your whole mind">
+                    <article class="mountains">
+                        <img src="images/mountains.jpg" 
+                            alt="An image of a landscape with mountains" class="image-one">
+                        <header class="article-header">
+                            <p class="date">JULY 23, 2022</p>
+                            <h2>Where the Mountains Reset Your Mind</h2>
+                            <p>My trip to the Pyrenees was exactly what I needed. After spending so much time in busy cities and fast paced environments, being surrounded by mountains felt like hitting a reset button.</p>
+                        </header>
+                    </article>
+                </a>
+            </section>
+        </main>
+        <footer>
+			<p class="footer-text">&copy; My Traveling Journal 2026</p>
+		</footer>
+        <script src="main.js"></script>
+    </body>
+</html>

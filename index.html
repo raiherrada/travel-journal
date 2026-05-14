@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Traveling Journal</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/dda189db68.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- top area -->
+        <header class="banner-header">
+            <section class="banner">
+                <img src="images/world.png" class="banner-img">
+                <h1>My Traveling Journal</h1>
+            </section>
+            <nav class="navigation">
+                <!-- regular navigation elements (hidden on mobile with the class "hidden") -->
+                <ul class="navigation-list">
+                    <li><a href="index.html" class="home hidden">HOME</a></li>
+                    <li><a href="about.html" class="about-me hidden">ABOUT ME</a></li>
+                    <li class="sidebar-show" id="sidebar-show"><a href="#"><i class="fa-solid fa-bars fa-lg"></i></a></li>
+                </ul>
+                <!-- hidden sidebar (unless it's mobile) -->
+                <ul class="sidebar" id="sidebar">
+                    <li class="close-btn" id="close-btn"><i class="fa-solid fa-x fa-sm"></i></li>
+                    <li><a href="index.html" class="home">HOME</a></li>
+                    <li><a href="about.html" class="about-me">ABOUT ME</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        
+         <a href="/article.html" 
+				class="solo-travel" 
+				aria-label="Discover about freedom found in traveling solo">
+                <section class="main-article">
+                    <p class="date">MAY 10, 2026</p>
+                    <h2>Freedom Found Far From Home 🌍</h2>
+                    <h3 class="article-description">Traveling solo is one of the most rewarding experiences I have ever had. There is something incredibly empowering about stepping into a new place completely on your own and realizing that every decision is yours to make ✨</h3>
+                </section>
+            </a>
+            
+           <!-- articles -->
+        <main> 
+                   
+            <a href="/a-journey-through-the-heart-of-thailand.html" 
+				class="thailand" 
+				aria-label="A journey through the heart of Thailand">
+				<article>
+					<img src="images/thailand.jpg" 
+						alt="An image of a boat in a landscape in Thailand" class="image-one">
+					<header class="article-header">
+                        <p class="date">JULY 23, 2022</p>
+						<h2>A Journey Through the Heart of Thailand</h2>
+						<h3 class="article-description">Thailand was one of those trips that felt like five different adventures combined into one. Every destination had its own personality, atmosphere, and rhythm, which made the entire journey unforgettable.</h3>
+					</header>
+				</article>
+			</a>
+            
+            <a href="/breathing-under-water-in-phi-phi.html" 
+				class="phiphi" 
+				aria-label="Breathing underwater in Phi Phi islands">
+				<article>
+					<img src="images/phiphi.jpg" 
+						alt="An image of a woman doing scuba diving in Phi Phi islands" class="image-one">
+					<header class="article-header">
+                        <p class="date">JULY 23, 2022</p>
+						<h2>Breathing Underwater in Phi Phi</h2>
+						<h3 class="article-description">Scuba diving in Phi Phi was one of the most exciting and unforgettable things I have ever done. Before getting into the water, I felt a mix of excitement and nervousness.</h3>
+					</header>
+				</article>
+			</a>
+            
+            <a href="/where-the-mountains-reset-your-mind" 
+				class="mountains" 
+				aria-label="Discover the power of mountains in reseting your whole mind">
+				<article>
+					<img src="images/mountains.jpg" 
+						alt="An image of a landscape with mountains" class="image-one">
+					<header class="article-header">
+                        <p class="date">JULY 23, 2022</p>
+						<h2>Where the Mountains Reset Your Mind</h2>
+						<h3 class="article-description">My trip to the Pyrenees was exactly what I needed. After spending so much time in busy cities and fast paced environments, being surrounded by mountains felt like hitting a reset button.</h3>
+					</header>
+				</article>
+			</a>
+            
+            <!--- Three more articles --->
+            
+            <a href="/the-magic-of-scottish-highlands.html" 
+				class="highlands" 
+				aria-label="The magic of Scottish Highlands">
+				<article>
+					<img src="images/highlands.jpg" 
+						alt="A image of a train bridge in the Scottish Higlands" class="image-one">
+					<header class="article-header">
+                        <p class="date">JULY 23, 2022</p>
+						<h2>The Magic of the Scottish Highlands</h2>
+						<h3 class="article-description">The Highlands felt like stepping into another world. From the moment I arrived, the landscapes were dramatic, wild, and almost unreal.</h3>
+					</header>
+				</article>
+			</a>
+            
+            <a href="/the-beauty-of-traveling-slowly.html" 
+				class="beauty" 
+				aria-label="The beauty of traveling slowly">
+				<article>
+					<img src="images/beauty.jpg" 
+						alt="An image of a bridge connecting to an island" class="image-one">
+					<header class="article-header">
+                        <p class="date">JULY 23, 2022</p>
+						<h2>The Beauty of Traveling Slowly</h2>
+						<h3 class="article-description">Not every travel memory comes from famous landmarks or major adventures. Some of my favorite moments while traveling solo are actually the simplest ones.</h3>
+					</header>
+				</article>
+			</a>
+            
+            <a href="/feeling-at-home-anywhere.html" 
+				class="home" 
+				aria-label="How you can feel at home anywhere in the world">
+				<article>
+					<img src="images/home.jpg" 
+						alt="An image of the wing of an airplane in the sky" class="image-one">
+					<header class="article-header">
+                        <p class="date">JULY 23, 2022</p>
+						<h2>Feeling at Home Anywhere</h2>
+						<h3 class="article-description">One of the greatest lessons traveling solo has taught me is adaptability. The more I traveled alone, the more comfortable I became with uncertainty.</h3>
+					</header>
+				</article>
+			</a>
+        </main>
+        <footer>
+			<p class="footer-text">&copy; My Traveling Journal 2026</p>
+		</footer>
+        <script src="main.js"></script>
+    </body>
+</html>
