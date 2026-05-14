@@ -59,24 +59,24 @@ footer p{
 }
 
 p.date{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 h3{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
     font-weight: 700;
     line-height: 1.5;
 }
 
 p{
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5;
 }
 
@@ -89,7 +89,7 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 0 3px;
-    margin: 15px 0.7em;
+    margin: 0.9375em 0.7em;
 }
 
 .banner{
@@ -102,7 +102,7 @@ p{
     width: 20%;
     max-width: 50px;
     min-width: 20px;
-    margin: 15px;
+    margin: 0.9375em;
     object-fit: cover;
 }
 
@@ -168,7 +168,7 @@ nav ul{
    flex-direction: column;
    gap: 20px;
    padding: 5px;
-   margin: 10px;
+   margin: 0.625em;
 }
 
 .avatar{
@@ -195,7 +195,7 @@ nav ul{
 
 article{
     padding: 5px;
-    margin: 10px;
+    margin: 0.625em;
 }
 
 .image-one{
@@ -304,26 +304,26 @@ footer{
     }
 
     h2{
-        font-size: 36px;
+        font-size: 2.25rem;
         font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
     }
 
     h3{
-        font-size: 20px;
+        font-size: 1.25rem;
         font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
         font-weight: 700;
         line-height: 1.5;
-        margin: 10px 0;
+        margin: 0.625em 0;
     }
 
     p{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1.5;
-        margin: 10px 0;
+        margin: 0.625em 0;
     }
     
     .recent-posts-text{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     
     footer p{
