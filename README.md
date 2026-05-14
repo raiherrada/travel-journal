@@ -36,6 +36,7 @@ Proper use of `<header>`, `<main>`, `<article>`, and `<section>` for accessibili
 
 ## 🧱 Project Structure
 
+```
 project-root/
 │
 ├── index.html # Homepage with travel journal grid
@@ -60,7 +61,7 @@ project-root/
 │ └── rai.jpeg
 │
 └── main.js # JavaScript for sidebar toggle navigation
-
+```
 
 ---
 
